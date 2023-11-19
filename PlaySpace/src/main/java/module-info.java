@@ -1,9 +1,8 @@
-module com.example.demo4 {
+module com.example.cedintegradora {
     requires javafx.controls;
     requires javafx.fxml;
-    requires javafx.web;
 
 
-    opens com.example.PlaySpace to javafx.fxml;
-    exports com.example.PlaySpace;
+    opens com.example.cedintegradora to javafx.fxml;
+    exports com.example.cedintegradora to javafx.graphics;
 }
