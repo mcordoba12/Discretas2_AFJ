@@ -6,6 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="918ecab9-6e4a-44e5-917e-7e28c437ee29" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/module-info.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/module-info.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../doc/El METODO DE DISEÑO DE LA INGENIERIA.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../doc/El METODO DE DISEÑO DE LA INGENIERIA.docx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
