@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #1a3b55;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cedintegradora.Exit">
+   <children>
+      <ImageView fitHeight="272.0" fitWidth="495.0" layoutX="50.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/exit.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="exit" layoutX="243.0" layoutY="310.0" mnemonicParsing="false" onAction="#onExit" prefHeight="53.0" prefWidth="133.0" text="Return" />
+   </children>
+</AnchorPane>
