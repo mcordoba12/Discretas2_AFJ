@@ -23,7 +23,7 @@ public class Bullet extends Avatar {
 
         position.setX( position.getX() + dir.getX() );
         position.setY( position.getY() + dir.getY() );
-        hitBox.refreshHitBox(position.getX()-(width/2), position.getY()-(height/2), position.getX()+(width/2), position.getY()+(height/2));
+        box.refreshHitBox(position.getX()-(width/2), position.getY()-(height/2), position.getX()+(width/2), position.getY()+(height/2));
     }
 
     public boolean outside(double height, double width) {
@@ -31,7 +31,7 @@ public class Bullet extends Avatar {
     }
 
     public boolean giveDamage(Avatar avatar){
-        if(hitBox.comparePosition(avatar.getHitBox())){
+        if(box.comparePosition(avatar.getHitBox())){
             System.out.println("hit");
             avatar.setLife(avatar.getLife()-this.damage);
             System.out.println(avatar.getLife()-this.damage + " life" + avatar.getLife() + " damage" + this.damage);

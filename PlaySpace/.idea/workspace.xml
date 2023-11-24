@@ -61,7 +61,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/angel/Documents/CEDIntegradora",
+    "last_opened_file_path": "C:/Users/angel/Documents/CEDImplementacion",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -101,6 +101,7 @@
       <workItem from="1700317166458" duration="577000" />
       <workItem from="1700340889800" duration="16539000" />
       <workItem from="1700783553906" duration="1455000" />
+      <workItem from="1700785772301" duration="1167000" />
     </task>
     <servers />
   </component>
@@ -111,9 +112,9 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-field">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/cedintegradora/model/drawing/HitBox.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/cedintegradora/model/drawing/Box.java</url>
           <line>5</line>
-          <properties field="y1" class="com.example.cedintegradora.model.drawing.HitBox" />
+          <properties field="yMax" class="com.example.cedintegradora.model.drawing.Box" />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>

@@ -18,7 +18,7 @@ public class PressurePlate extends Tile {
 
     @Override
     public void draw(GraphicsContext gc) {
-        gc.strokeRect(hitBox.getX0(), hitBox.getY0(), width, height);
+        gc.strokeRect(box.getxMin(), box.getyMin(), width, height);
 
         if ( isPressed ) {
             gc.setFill(Color.WHITE);
@@ -33,7 +33,7 @@ public class PressurePlate extends Tile {
     }
 
     public boolean isPressed(Avatar avatar) {
-        if(hitBox.comparePosition(avatar.getHitBox())){
+        if(box.comparePosition(avatar.getHitBox())){
             isPressed = true;
             return true;
         } else {

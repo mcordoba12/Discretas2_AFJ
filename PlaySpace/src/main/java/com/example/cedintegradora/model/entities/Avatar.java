@@ -2,12 +2,12 @@ package com.example.cedintegradora.model.entities;
 
 
 import com.example.cedintegradora.model.drawing.IDrawable;
-import com.example.cedintegradora.model.drawing.HitBox;
+import com.example.cedintegradora.model.drawing.Box;
 import com.example.cedintegradora.model.drawing.Vector;
 
 public abstract class  Avatar implements IDrawable {
     protected Vector position = new Vector(0, 0);
-    protected HitBox hitBox;
+    protected Box box;
     protected double width;
     protected double height;
 
@@ -18,7 +18,7 @@ public abstract class  Avatar implements IDrawable {
         this.position.setY(y);
         this.width = width;
         this.height = height;
-        this.hitBox = new HitBox(x-(width/2), y-(height/2), x+(width/2), y+(height/2));
+        this.box = new Box(x-(width/2), y-(height/2), x+(width/2), y+(height/2));
         this.life = life;
     }
 
@@ -30,12 +30,12 @@ public abstract class  Avatar implements IDrawable {
         this.position = position;
     }
 
-    public HitBox getHitBox() {
-        return hitBox;
+    public Box getHitBox() {
+        return box;
     }
 
-    public void setHitBox(HitBox hitBox) {
-        this.hitBox = hitBox;
+    public void setHitBox(Box box) {
+        this.box = box;
     }
 
     public double getLife() {

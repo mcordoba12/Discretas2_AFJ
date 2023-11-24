@@ -3,7 +3,6 @@ package com.example.cedintegradora.model.drawing;
 import com.example.cedintegradora.model.entities.objects.Tile;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.image.Image;
-import javafx.scene.paint.Color;
 
 public class MapNode extends Tile implements IDrawable {
 
@@ -25,7 +24,7 @@ public class MapNode extends Tile implements IDrawable {
         else {
             gc.drawImage(nonNavigableImage, position.getX() - (width / 2), position.getY() - (height/2), getWidth(), getHeight());
         }
-        gc.strokeRect(hitBox.getX0(), hitBox.getY0(), width, height);
+        gc.strokeRect(box.getxMin(), box.getyMin(), width, height);
     }
 
     public boolean isNavigable() {

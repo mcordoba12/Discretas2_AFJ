@@ -271,16 +271,16 @@ public class GameMap {
 
     }
 
-    public boolean mapCollision(HitBox hitBox){
+    public boolean mapCollision(Box box){
 
-        Coordinate coordinateUp= new Coordinate(hitBox.getX0(), hitBox.getY0());
-        Coordinate coordinateDown = new Coordinate(hitBox.getX1(), hitBox.getY1());
+        Coordinate coordinateUp= new Coordinate(box.getxMin(), box.getyMin());
+        Coordinate coordinateDown = new Coordinate(box.getxMax(), box.getyMax());
         List<Coordinate> coordinates = new ArrayList<>();
 
         coordinates.add( coordinateDown);
         coordinates.add( coordinateUp);
-        coordinates.add(new Coordinate(hitBox.getX1(),hitBox.getY0()));
-        coordinates.add(new Coordinate(hitBox.getX0(),hitBox.getY1()));
+        coordinates.add(new Coordinate(box.getxMax(), box.getyMin()));
+        coordinates.add(new Coordinate(box.getxMin(), box.getyMax()));
 
         boolean isCollision = false;
         for (Coordinate coordinate: coordinates
@@ -295,10 +295,10 @@ public class GameMap {
     }
 
 
-    public boolean mapLimit(HitBox hitBox){
+    public boolean mapLimit(Box box){
 
-        if (hitBox.getX0() < 3 || hitBox.getY0()< 3
-                || hitBox.getX1() >getWidth()-3 || hitBox.getY1()> getHeight()-3 ) return true;
+        if (box.getxMin() < 3 || box.getyMin()< 3
+                || box.getxMax() >getWidth()-3 || box.getyMax()> getHeight()-3 ) return true;
         return false;
 
 

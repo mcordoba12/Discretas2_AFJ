@@ -4,7 +4,6 @@ package com.example.cedintegradora.model.entities.mob;
 import com.example.cedintegradora.HelloController;
 import com.example.cedintegradora.model.drawing.Vector;
 import com.example.cedintegradora.model.entities.Avatar;
-import com.example.cedintegradora.model.entities.objects.functional.Bullet;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.image.Image;
 
@@ -20,9 +19,9 @@ public class Boss extends Avatar implements Runnable{
 
     @Override
     public void draw(GraphicsContext gc) {
-        gc.strokeRect(hitBox.getX0(), hitBox.getY0(), width, height);
-        hitBox.refreshHitBox(position.getX()-(width/2), position.getY()-(height/2), position.getX()+(width/2), position.getY()+(height/2));
-        gc.drawImage(idle, hitBox.getX0(), hitBox.getY0(), width, height);
+        gc.strokeRect(box.getxMin(), box.getyMin(), width, height);
+        box.refreshHitBox(position.getX()-(width/2), position.getY()-(height/2), position.getX()+(width/2), position.getY()+(height/2));
+        gc.drawImage(idle, box.getxMin(), box.getyMin(), width, height);
     }
 
     @Override

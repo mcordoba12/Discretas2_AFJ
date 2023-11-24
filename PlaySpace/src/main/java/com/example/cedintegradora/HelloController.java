@@ -166,7 +166,8 @@ public class HelloController implements Initializable, Runnable{
     private void playerWins() throws IOException {
         Platform.runLater(() -> {
             try {
-                HelloApplication.showWindow("exit", 600,452);
+                HelloApplication.hideWindow((javafx.stage.Stage) canvas.getScene().getWindow());
+                HelloApplication.showWindow("exit", 600,496);
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }

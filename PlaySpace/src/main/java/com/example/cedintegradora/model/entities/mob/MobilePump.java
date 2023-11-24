@@ -8,7 +8,7 @@ import com.example.cedintegradora.model.drawing.Vector;
 import com.example.cedintegradora.model.entities.Avatar;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.image.Image;
-import javafx.scene.paint.Color;
+
 import java.util.Stack;
 
 public class MobilePump extends Avatar implements Runnable {
@@ -111,12 +111,12 @@ public class MobilePump extends Avatar implements Runnable {
         //gc.setFill(Color.RED);
         //gc.fillOval(hitBox.getX0(), hitBox.getY0(), 80, 80);
 
-        gc.drawImage(image, hitBox.getX0(), hitBox.getY0(), width, height);
+        gc.drawImage(image, box.getxMin(), box.getyMin(), width, height);
 
         position.setX(position.getX() + direction.getX());
         position.setY(position.getY() + direction.getY());
-        hitBox.refreshHitBox(position.getX() - (width / 2), position.getY() - (height / 2), position.getX() + (width / 2), position.getY() + (height / 2));
-        gc.strokeRect(hitBox.getX0(), hitBox.getY0(), width, height);
+        box.refreshHitBox(position.getX() - (width / 2), position.getY() - (height / 2), position.getX() + (width / 2), position.getY() + (height / 2));
+        gc.strokeRect(box.getxMin(), box.getyMin(), width, height);
     }
 
 
@@ -125,7 +125,7 @@ public class MobilePump extends Avatar implements Runnable {
     }
 
     public boolean giveDamage(Avatar avatar) {
-        if (hitBox.comparePosition(avatar.getHitBox())) {
+        if (box.comparePosition(avatar.getHitBox())) {
             System.out.println("hit");
             avatar.setLife(avatar.getLife() - this.damage);
             return true;

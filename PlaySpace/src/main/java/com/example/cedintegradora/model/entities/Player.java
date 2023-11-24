@@ -73,35 +73,35 @@ public class Player extends Avatar implements Runnable {
 
     public void movement(){
         if ( keyA ){
-            hitBox.refreshHitBox((position.getX()-3)-(width/2), position.getY()-(height/2), (position.getX()-3)+(width/2), position.getY()+(height/2));
-            if ( colission() || HelloController.getGameMap().mapCollision(this.hitBox)
-                    || HelloController.getGameMap().mapLimit(hitBox)) return;
+            box.refreshHitBox((position.getX()-3)-(width/2), position.getY()-(height/2), (position.getX()-3)+(width/2), position.getY()+(height/2));
+            if ( colission() || HelloController.getGameMap().mapCollision(this.box)
+                    || HelloController.getGameMap().mapLimit(box)) return;
             position.setX(position.getX()-3);
         }
         if ( keyW ){
-            hitBox.refreshHitBox(position.getX()-(width/2), position.getY()-3-(height/2), position.getX()+(width/2), position.getY()-3+(height/2));
-            if ( colission() || HelloController.getGameMap().mapCollision(this.hitBox)
-                    || HelloController.getGameMap().mapLimit(hitBox)) return;
+            box.refreshHitBox(position.getX()-(width/2), position.getY()-3-(height/2), position.getX()+(width/2), position.getY()-3+(height/2));
+            if ( colission() || HelloController.getGameMap().mapCollision(this.box)
+                    || HelloController.getGameMap().mapLimit(box)) return;
             position.setY(position.getY()-3);
         }
         if ( keyS ){
-            hitBox.refreshHitBox(position.getX()-(width/2), position.getY()+3-(height/2), position.getX()+(width/2), position.getY()+3+(height/2));
-            if ( colission() || HelloController.getGameMap().mapCollision(this.hitBox)
-                    || HelloController.getGameMap().mapLimit(hitBox)) return;
+            box.refreshHitBox(position.getX()-(width/2), position.getY()+3-(height/2), position.getX()+(width/2), position.getY()+3+(height/2));
+            if ( colission() || HelloController.getGameMap().mapCollision(this.box)
+                    || HelloController.getGameMap().mapLimit(box)) return;
             position.setY(position.getY()+3);
         }
         if ( keyD ){
-            hitBox.refreshHitBox((position.getX()+3)-(width/2), position.getY()-(height/2), (position.getX()+3)+(width/2), position.getY()+(height/2));
-            if ( colission() || HelloController.getGameMap().mapCollision(this.hitBox)
-                    || HelloController.getGameMap().mapLimit(hitBox)) return;
+            box.refreshHitBox((position.getX()+3)-(width/2), position.getY()-(height/2), (position.getX()+3)+(width/2), position.getY()+(height/2));
+            if ( colission() || HelloController.getGameMap().mapCollision(this.box)
+                    || HelloController.getGameMap().mapLimit(box)) return;
             position.setX(position.getX()+3);
         }
-        hitBox.refreshHitBox(position.getX(), position.getY(), position.getX(), position.getY());
+        box.refreshHitBox(position.getX(), position.getY(), position.getX(), position.getY());
     }
 
     private boolean colission() {
-        if (hitBox.comparePosition(HelloController.finalBoss.getHitBox())) {
-            hitBox.refreshHitBox(position.getX()-(width/2), position.getY()-(height/2), position.getX()+(width/2), position.getY()+(height/2));
+        if (box.comparePosition(HelloController.finalBoss.getHitBox())) {
+            box.refreshHitBox(position.getX()-(width/2), position.getY()-(height/2), position.getX()+(width/2), position.getY()+(height/2));
             return true;
         }
         return false;

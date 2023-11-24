@@ -2,7 +2,7 @@ package com.example.cedintegradora.model.entities.objects;
 
 
 import com.example.cedintegradora.model.drawing.IDrawable;
-import com.example.cedintegradora.model.drawing.HitBox;
+import com.example.cedintegradora.model.drawing.Box;
 import com.example.cedintegradora.model.drawing.Vector;
 import javafx.scene.canvas.GraphicsContext;
 
@@ -11,7 +11,7 @@ public abstract class Tile implements IDrawable {
     private static final double WIDTH_SIZE = 80;
     private static final double HEIGHT_SIZE = 80;
 
-    protected HitBox hitBox;
+    protected Box box;
     protected double width;
     protected double height;
     protected Vector position = new Vector(0, 0);
@@ -21,7 +21,7 @@ public abstract class Tile implements IDrawable {
         this.height = HEIGHT_SIZE;
         this.position.setX(x);
         this.position.setY(y);
-        this.hitBox = new HitBox(x-(width/2), y-(height/2), x+(width/2), y+(height/2));
+        this.box = new Box(x-(width/2), y-(height/2), x+(width/2), y+(height/2));
     }
 
     public Tile() {
@@ -32,12 +32,12 @@ public abstract class Tile implements IDrawable {
 
     }
 
-    public HitBox getHitBox() {
-        return hitBox;
+    public Box getHitBox() {
+        return box;
     }
 
-    public void setHitBox(HitBox hitBox) {
-        this.hitBox = hitBox;
+    public void setHitBox(Box box) {
+        this.box = box;
     }
 
     public double getWidth() {
