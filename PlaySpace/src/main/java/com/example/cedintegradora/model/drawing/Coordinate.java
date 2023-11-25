@@ -38,11 +38,23 @@ public class Coordinate implements Comparable<Coordinate> {
         return this.x== coordinate.getX() && this.y == coordinate.getY();
     }
 
+    /**
+     * Overrides the hashCode method to generate a hash code for Coordinate objects.
+     *
+     * @return The generated hash code.
+     */
     @Override
     public int hashCode() {
-        return Objects.hash(x,y);
+        return Objects.hash(x, y);
     }
 
+    /**
+     * Overrides the compareTo method for Comparable interface.
+     * Currently, it returns 0, assuming all coordinates are equal.
+     *
+     * @param o The other Coordinate object to compare.
+     * @return 0, indicating equality for the current implementation.
+     */
     @Override
     public int compareTo(Coordinate o) {
         return 0;

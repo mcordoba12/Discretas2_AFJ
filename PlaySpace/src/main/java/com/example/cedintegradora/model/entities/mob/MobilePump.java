@@ -21,6 +21,14 @@ public class MobilePump extends Avatar implements Runnable {
 
     private Image image = new Image("file:src/main/resources/com/example/cedintegradora/images/enemy.gif");
 
+    /**
+     * Parameterized constructor for MobilePump.
+     *
+     * @param x      The x-coordinate of the mobile pump.
+     * @param y      The y-coordinate of the mobile pump.
+     * @param life   The life points of the mobile pump.
+     * @param damage The damage inflicted by the mobile pump.
+     */
     public MobilePump(double x, double y, double life, double damage) {
         super(x, y, HelloController.gameMap.getNodeSize(), HelloController.gameMap.getNodeSize(), life);
 
@@ -74,6 +82,10 @@ public class MobilePump extends Avatar implements Runnable {
 
     }
 
+    /**
+     * Implements the run method from the Runnable interface.
+     * This method is used to control the mobile pump's movement in a separate thread.
+     */
     @Override
     public void run() {
         while (!path.isEmpty()) {
@@ -106,6 +118,11 @@ public class MobilePump extends Avatar implements Runnable {
         }
     }
 
+    /**
+     * Draws the mobile pump on the canvas using the provided GraphicsContext.
+     *
+     * @param gc The GraphicsContext used for drawing on the canvas.
+     */
     @Override
     public void draw(GraphicsContext gc) {
         //gc.setFill(Color.RED);
@@ -119,11 +136,22 @@ public class MobilePump extends Avatar implements Runnable {
         gc.strokeRect(box.getxMin(), box.getyMin(), width, height);
     }
 
-
+    /**
+     * Checks if the mobile pump is outside the given height and width boundaries.
+     *
+     * @param height The maximum height boundary.
+     * @param width  The maximum width boundary.
+     * @return True if the mobile pump is outside the boundaries, false otherwise.
+     */
     public boolean outside(double height, double width) {
         return position.getX() > width || position.getX() < 0 || position.getY() > height || position.getY() < 0;
     }
-
+    /**
+     * Inflicts damage to the player if the mobile pump's hitbox overlaps with the player's hitbox.
+     *
+     * @param avatar The player object to check for collision.
+     * @return True if damage is inflicted, false otherwise.
+     */
     public boolean giveDamage(Avatar avatar) {
         if (box.comparePosition(avatar.getHitBox())) {
             System.out.println("hit");

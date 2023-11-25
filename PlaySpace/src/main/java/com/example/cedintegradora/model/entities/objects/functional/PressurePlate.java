@@ -16,24 +16,40 @@ public class PressurePlate extends Tile {
         super(x, y);
     }
 
+    /**
+     * Draws the pressure plate on the canvas using the provided GraphicsContext.
+     *
+     * @param gc The GraphicsContext used for drawing on the canvas.
+     */
     @Override
     public void draw(GraphicsContext gc) {
         gc.strokeRect(box.getxMin(), box.getyMin(), width, height);
 
-        if ( isPressed ) {
+        if (isPressed) {
             gc.setFill(Color.WHITE);
-            gc.fillRect(position.getX() - (width / 2), position.getY() - (height/2), getWidth(), getHeight());
+            gc.fillRect(position.getX() - (width / 2), position.getY() - (height / 2), getWidth(), getHeight());
         } else {
-            gc.drawImage(image, position.getX() - (width / 2), position.getY() - (height/2), getWidth(), getHeight());
+            gc.drawImage(image, position.getX() - (width / 2), position.getY() - (height / 2), getWidth(), getHeight());
         }
     }
 
+    /**
+     * Checks if the pressure plate is pressed.
+     *
+     * @return True if the pressure plate is pressed, false otherwise.
+     */
     public boolean isPressed() {
         return isPressed;
     }
 
+    /**
+     * Checks if the pressure plate is pressed when colliding with the given avatar.
+     *
+     * @param avatar The avatar object to check for collision.
+     * @return True if the pressure plate is pressed due to the collision, false otherwise.
+     */
     public boolean isPressed(Avatar avatar) {
-        if(box.comparePosition(avatar.getHitBox())){
+        if (box.comparePosition(avatar.getHitBox())) {
             isPressed = true;
             return true;
         } else {

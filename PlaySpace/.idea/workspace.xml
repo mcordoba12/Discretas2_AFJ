@@ -5,23 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="918ecab9-6e4a-44e5-917e-7e28c437ee29" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/cedintegradora/Exit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/cedintegradora/HelloApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/cedintegradora/HelloController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/cedintegradora/exit.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/cedintegradora/hello-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/cedintegradora/model/drawing/Box.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/cedintegradora/model/drawing/Box.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/cedintegradora/model/drawing/Coordinate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/cedintegradora/model/drawing/Coordinate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/cedintegradora/model/drawing/GameMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/cedintegradora/model/drawing/GameMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/cedintegradora/model/drawing/MapNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/cedintegradora/model/drawing/MapNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/cedintegradora/model/drawing/Vector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/cedintegradora/model/drawing/Vector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/cedintegradora/model/entities/mob/Boss.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/cedintegradora/model/entities/mob/Boss.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/cedintegradora/model/entities/mob/MobilePump.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/cedintegradora/model/entities/mob/MobilePump.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/cedintegradora/model/entities/objects/functional/Bullet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/cedintegradora/model/entities/objects/functional/Bullet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/cedintegradora/model/entities/objects/functional/PressurePlate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/cedintegradora/model/entities/objects/functional/PressurePlate.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,18 +32,15 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="workspaceImportEnabled" value="true" />
-      </MavenImportingSettings>
-    </option>
-  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 8
+}]]></component>
   <component name="ProjectId" id="2YLolpgcE2MhvZnRaWp23tITLl1" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -61,6 +53,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
     "last_opened_file_path": "C:/Users/angel/Documents/CEDImplementacion",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -108,6 +101,17 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -116,6 +120,11 @@
           <line>5</line>
           <properties field="yMax" class="com.example.cedintegradora.model.drawing.Box" />
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/cedintegradora/model/drawing/GameMap.java</url>
+          <line>80</line>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
