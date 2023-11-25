@@ -54,7 +54,7 @@ public class Menu implements Initializable {
         }
     }
 
-
+    // This method is called when the FXML file is loaded
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
 

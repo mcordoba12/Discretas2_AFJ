@@ -8,7 +8,14 @@ import javafx.scene.canvas.GraphicsContext;
 
 public abstract class Tile implements IDrawable {
 
+    /**
+     * Represents the width size constant for a game object.
+     */
     private static final double WIDTH_SIZE = 80;
+
+    /**
+     * Represents the height size constant for a game object.
+     */
     private static final double HEIGHT_SIZE = 80;
 
     protected Box box;
@@ -27,6 +34,11 @@ public abstract class Tile implements IDrawable {
     public Tile() {
     }
 
+    /**
+     * Draws the game object on the canvas using the provided GraphicsContext.
+     *
+     * @param gc The GraphicsContext used for drawing on the canvas.
+     */
     @Override
     public void draw(GraphicsContext gc) {
 

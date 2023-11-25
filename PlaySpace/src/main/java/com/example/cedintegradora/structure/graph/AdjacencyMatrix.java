@@ -497,10 +497,7 @@ public class AdjacencyMatrix<V extends Comparable<V>> implements Igraph<V> {
         }
         return naryTree;
 
-
-
     }
-
 
     public ArrayList<Edge<V>> kruskal() {
         ArrayList<Edge<V>> A = new ArrayList<>();
@@ -557,14 +554,6 @@ public class AdjacencyMatrix<V extends Comparable<V>> implements Igraph<V> {
         temp.add(distances);
         return temp;
     }
-
-
-
-
-
-
-
-
 
     public ArrayList<Vertex<V>> getVertexes() {
         return vertexes;
