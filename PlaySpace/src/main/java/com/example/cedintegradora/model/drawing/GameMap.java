@@ -2,8 +2,8 @@ package com.example.cedintegradora.model.drawing;
 
 
 import com.example.cedintegradora.model.entities.objects.functional.PressurePlate;
-import com.example.cedintegradora.structure.graph.AdjacencyMatrixGraph;
-import com.example.cedintegradora.structure.graph.AdjencyListGraph;
+import com.example.cedintegradora.structure.graph.AdjacencyMatrix;
+import com.example.cedintegradora.structure.graph.AdjencyList;
 import java.util.*;
 import java.util.concurrent.CopyOnWriteArrayList;
 
@@ -11,8 +11,8 @@ import java.util.concurrent.CopyOnWriteArrayList;
 public class GameMap {
 
     private ArrayList<ArrayList<MapNode>> mapGuide;
-    private AdjencyListGraph<Coordinate> graph;
-    private AdjacencyMatrixGraph<Coordinate> matrixGraph;
+    private AdjencyList<Coordinate> graph;
+    private AdjacencyMatrix<Coordinate> matrixGraph;
 
     private double width;
     private double height;
@@ -27,9 +27,9 @@ public class GameMap {
         this.height = height;
         this.nodeSize = nodeSize;
         this.mapGuide = new ArrayList<>();
-        this.graph = new AdjencyListGraph<>(false, false);
+        this.graph = new AdjencyList<>(false, false);
         this.chunkSize = chunkSize;
-        this.matrixGraph = new AdjacencyMatrixGraph<>(false, false);
+        this.matrixGraph = new AdjacencyMatrix<>(false, false);
     }
 
     /**
@@ -455,7 +455,7 @@ public class GameMap {
      *
      * @return The AdjacencyListGraph containing coordinates that represents the graph of the map.
      */
-    public AdjencyListGraph<Coordinate> getGraph(){
+    public AdjencyList<Coordinate> getGraph(){
         return graph;}
 
 
@@ -464,7 +464,7 @@ public class GameMap {
      *
      * @param graph The AdjacencyListGraph containing coordinates to be set for the map.
      */
-    public void setGraph(AdjencyListGraph<Coordinate> graph) {
+    public void setGraph(AdjencyList<Coordinate> graph) {
         this.graph = graph;
     }
 
@@ -510,7 +510,7 @@ public class GameMap {
      *
      * @return The AdjacencyMatrixGraph containing coordinates that represents the matrix graph of the map.
      */
-    public AdjacencyMatrixGraph<Coordinate> getMatrixGraph() {
+    public AdjacencyMatrix<Coordinate> getMatrixGraph() {
         return matrixGraph;
     }
 
@@ -519,7 +519,7 @@ public class GameMap {
      *
      * @param matrixGraph The AdjacencyMatrixGraph containing coordinates to be set for the map.
      */
-    public void setMatrixGraph(AdjacencyMatrixGraph<Coordinate> matrixGraph) {
+    public void setMatrixGraph(AdjacencyMatrix<Coordinate> matrixGraph) {
         this.matrixGraph = matrixGraph;
     }
 }
